@@ -6,9 +6,15 @@
     <main>
       <form>
     <h1>Zoek je squad-mate!</h1>
-    <input type="search" placeholder="Zoek..">
+    <input type="search" placeholder="Zoek op naam">
+
+  <select id="filter-select">
+    <option value="">Filteren</option>
+    <option value="squad">Squad</option>
+    <option value="name-az">Naam A–Z</option>
+    <option value="birthdate">Birthdate</option>
+  </select>
         </form>
-    <button>filter</button>
 
     {% for person in persons %}
       <div class="Squadcard">
