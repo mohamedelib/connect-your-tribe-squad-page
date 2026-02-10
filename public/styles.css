@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
 :root {
   --button-color: #81a1c6;
 }
@@ -17,4 +19,10 @@ form {
 
 .squadcard {
   width: 250px;
+}
+
+h1 {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 1.8rem;
 }
