@@ -3,36 +3,20 @@
 <header>
   <img src="/images/fdnd.png" alt="fdnd" width="150" height="150">
 </header>
-  <main>
+    <main>
+      <form>
     <h1>Zoek je squad-mate!</h1>
     <input type="search" placeholder="Zoek..">
-
+        </form>
     <button>filter</button>
 
-    {% comment %} Fotos met namen.. {% endcomment %}
-    <div class="Squadcard">
-      <img src="/images/prop.jpg" width="250" height="250" alt="profielfoto van Mo">
-      <p>{{ person.name }}Mohamed El Ibrahymy</p>
-    </div>
+    {% for person in persons %}
+      <div class="Squadcard">
+        <img src="/images/prop.jpg" width="250" height="250" alt="profielfoto van Mo">
+        <p>{{ person.name }}</p>
+      </div>
+    {% endfor %}
 
-    <div class="Squadcard">
-      <img src="/images/prop.jpg" width="250" height="250" alt="profielfoto van Mo">
-      <p>{{ person.name }}Mohamed El Ibrahymy</p>
-    </div>
-
-    <div class="Squadcard">
-      <img src="/images/prop.jpg" width="250" height="250" alt="profielfoto van Mo">
-      <p>{{ person.name }}Mohamed El Ibrahymy</p>
-    </div>
-
-    {% comment %}
-      <h2>Students</h2>
-      <ul>
-        {% for person in persons %}
-          <li><a href="/student/{{ person.id }}">{{ person.name }}</a></li>
-        {% endfor %}
-      </ul>
-    {% endcomment %}
   </main>
 </body>
 {% render 'partials/foot.liquid', squads: squads %}
