@@ -12,11 +12,13 @@ header {
   background-color: var(--background-color);
 }
 main {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   justify-content: flex-start;
   align-items: center;
+  background-color: var(--background-color);
 }
 
 form {
@@ -27,6 +29,7 @@ form {
 
 .squadcard {
   width: 250px;
+  gap: 10px;
 }
 
 h1 {
