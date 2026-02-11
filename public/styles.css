@@ -7,6 +7,10 @@
   --background-color: #fdfbfd;
 }
 
+header {
+  border-bottom: 4px solid var(--input--color);
+  background-color: var(--background-color);
+}
 main {
   display: flex;
   flex-direction: column;
