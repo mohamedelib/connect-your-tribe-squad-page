@@ -1,7 +1,15 @@
 {% render 'partials/head.liquid', title: person.name %}
 
-<a href="/">Back</a>
+<p><a href="/" class="back">&lt; Terug</a></p>
 
-{{ person.name }}
+<div class="Card">
+  <img
+    class="avatar"
+    src="{% if person.mugshot %}https://fdnd.directus.app/assets/{{ person.mugshot }}{% else %}/images/prop.jpg{% endif %}"
+    alt="{{ person.name }}"
+    width="300"
+  >
+  <h2>{{ person.name }}</h2>
+  <p class="squad">squad{{ person.squad }}</p>
 
 {% comment %} {% render 'partials/foot.liquid', squads: squads %} {% endcomment %}
