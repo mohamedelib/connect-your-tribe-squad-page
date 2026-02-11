@@ -1,0 +1,30 @@
+{% render 'partials/head.liquid', title: 'Squad page' %}
+
+<header>
+  <img src="/images/fdnd.png" alt="fdnd" width="150" height="150">
+</header>
+    <main>
+      <form>
+    <h1>Zoek je squad-mate!</h1>
+    <input type="search" placeholder="Zoek op naam">
+
+  <select id="filter-select">
+    <option value="">Filteren</option>
+    <option value="squad">Squad</option>
+    <option value="name-az">Naam A–Z</option>
+    <option value="birthdate">Birthdate</option>
+  </select>
+        </form>
+
+
+    {% for person in persons %}
+      <div class="Squadcard">
+        <p>{{ person.name }}</p>
+        <p>{{ person.bio }}</p>
+      </div>
+
+    {% endfor %}
+
+  </main>
+</body>
+{% render 'partials/foot.liquid', squads: squads %}
