@@ -16,14 +16,25 @@
   </select>
         </form>
 
-
+<div class="wrapper">
     {% for person in persons %}
+      
       <div class="Squadcard">
-        <img src="/images/prop.jpg" width="250" height="250" alt="profielfoto van Mo">
-        <p>{{ person.name }}</p>
+        <a href="/student/{{ person.id }}">
+        <img
+          class="mugshot"
+          src="{% if person.mugshot %}https://fdnd.directus.app/assets/{{ person.mugshot }}{% else %}/images/prop.jpg{% endif %}"
+          alt="{{ person.name }}"
+        >
+        </a>
+        <div class="card-footer">
+    <p>{{ person.name }}</p>
+    <span class="heart">♡</span>
+  </div>
       </div>
-    {% endfor %}
 
+    {% endfor %}
+  </div>
   </main>
 </body>
 {% render 'partials/foot.liquid', squads: squads %}
