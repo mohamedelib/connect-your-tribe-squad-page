@@ -125,6 +125,7 @@ h1 {
 
 .heart.active {
   color: red;
+  animation: pop 0.4s cubic-bezier(0.38, -0.18, 0.08, 1.33);
 }
 
 /* Student page */
@@ -213,4 +214,15 @@ button {
 .row input,
 .row button {
   height: 40px;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
