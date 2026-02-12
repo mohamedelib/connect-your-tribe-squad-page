@@ -15,11 +15,15 @@ header {
   border-bottom: 4px solid var(--input--color);
   background-color: var(--background-color);
 }
+
+body {
+  background-color: var(--background-color);
+}
 main {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   background-color: var(--background-color);
 }
@@ -59,7 +63,7 @@ h1 {
   border-radius: 12px;
   border: 1px solid var(--border-color);
   padding: 0 16px;
-  background-color: var(--input--color);
+  background-color: #fff;
   box-sizing: border-box;
 }
 .squadcard p {
@@ -68,7 +72,7 @@ h1 {
 .wrapper {
   gap: 50px;
   display: grid;
-  @media (min-width: 540px) {
+  @media (min-width: 588px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
@@ -102,6 +106,7 @@ h1 {
   &:hover {
     transform: translateY(-6px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    border: 2px outset var(--fav-color);
   }
 }
 
@@ -163,7 +168,7 @@ h1 {
   width: 360px;
   background: white;
   padding: 24px;
-  border-radius: 16px;
+  border-radius: 24px;
   display: grid;
   gap: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
@@ -237,4 +242,9 @@ button {
     transform: scale(1);
     opacity: 1;
   }
+}
+.page {
+  display: flex;
+  justify-content: center;
+  align-self: center;
 }

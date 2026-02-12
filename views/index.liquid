@@ -3,7 +3,7 @@
 <header>
   <img src="/images/fdnd.png" alt="fdnd" width="75" height="75">
 </header>
-    <main>
+    <main >
       <form>
     <h1>Zoek je squad-mate!</h1>
     <div class="controls">
@@ -21,7 +21,7 @@
 <div class="wrapper">
     {% for person in persons %}
       
-      <div class="Squadcard">
+      <div class="Squadcard" style="--fav-color: {{ person.fav_color }}">
         <a href="/student/{{ person.id }}">
         <img
           class="mugshot"
