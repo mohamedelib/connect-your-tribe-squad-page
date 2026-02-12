@@ -97,6 +97,12 @@ h1 {
   border-radius: 12px;
   overflow: hidden;
   background: white;
+  border-radius: 16px 16px 0 0;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  }
 }
 
 .mugshot {
@@ -104,6 +110,7 @@ h1 {
   height: 200px;
   object-fit: cover;
   display: block;
+  border-radius: 16px 16px 0 0;
 }
 
 .card-footer {
@@ -138,6 +145,11 @@ input,
 placeholder {
   font-family: Inter;
   font-weight: 300;
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: 30px;
 }
 .back {
   position: absolute;
