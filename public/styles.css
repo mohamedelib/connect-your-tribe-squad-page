@@ -66,6 +66,7 @@ h1 {
   border-color: 2px solid #d8dae0;
 }
 .wrapper {
+  gap: 50px;
   display: grid;
   @media (min-width: 540px) {
     display: grid;
@@ -146,7 +147,7 @@ placeholder {
 }
 
 .Card {
-  width: 320px;
+  width: 360px;
   background: white;
   padding: 24px;
   border-radius: 16px;
