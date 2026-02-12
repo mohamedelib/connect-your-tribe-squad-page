@@ -9,5 +9,9 @@ if (filter) {
     if (this.value === "az") {
       window.location.href = "/";
     }
+
+    if (this.value === "birthdate") {
+      window.location.href = "/birthdate";
+    }
   });
 }
