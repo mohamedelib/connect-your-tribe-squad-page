@@ -17,11 +17,11 @@ if (filter) {
 }
 
 // 1: selecteer de button
-let heartButton = document.querySelector(".heart");
-console.log(heartButton);
-
-// 2: wacht op een klik
-heartButton.addEventListener("click", function () {
-  // 3: maakt de hart rood , door een class toe te voegen aan die sectie..
-  heartButton.classList.toggle("active");
+let hearts = document.querySelectorAll(".heart");
+console.log(hearts);
+hearts.forEach(function (heart) {
+  // 2: wacht op een klik
+  heart.addEventListener("click", function () {
+    this.classList.toggle("active");
+  });
 });
