@@ -15,3 +15,13 @@ if (filter) {
     }
   });
 }
+
+// 1: selecteer de button
+let heartButton = document.querySelector(".heart");
+console.log(heartButton);
+
+// 2: wacht op een klik
+heartButton.addEventListener("click", function () {
+  // 3: maakt de hart rood , door een class toe te voegen aan die sectie..
+  heartButton.classList.toggle("active");
+});

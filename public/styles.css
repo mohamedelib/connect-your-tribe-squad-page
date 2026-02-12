@@ -99,6 +99,11 @@ select#filter-select {
 
 .heart {
   cursor: pointer;
+  font-size: 25px;
+}
+
+.heart.active {
+  color: red;
 }
 form {
   width: 100%;
