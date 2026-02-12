@@ -176,11 +176,18 @@ button {
   padding: 0 16px;
   border-radius: 10px;
   border: none;
-  background: #81a1c6;
+  background: var(--fav-color);
   cursor: pointer;
   color: white;
 }
 
 .avatar {
   margin: 10px auto;
+  border-radius: 50%;
+  outline: 2px solid var(--fav-color);
+}
+
+.row input,
+.row button {
+  height: 40px;
 }
