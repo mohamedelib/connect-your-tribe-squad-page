@@ -1,7 +1,20 @@
 const filter = document.getElementById("filter-select");
+const sort = document.getElementById("sort-select");
 console.log(filter);
 if (filter) {
   filter.addEventListener("change", function () {
+    if (this.value === "1I") {
+      window.location.href = "/1I";
+    }
+
+    if (this.value === "1J") {
+      window.location.href = "/1J";
+    }
+  });
+}
+
+if (sort) {
+  sort.addEventListener("change", function () {
     if (this.value === "za") {
       window.location.href = "/z-a";
     }
@@ -12,14 +25,6 @@ if (filter) {
 
     if (this.value === "birthdate") {
       window.location.href = "/birthdate";
-    }
-
-    if (this.value === "1I") {
-      window.location.href = "/1I";
-    }
-
-    if (this.value === "1J") {
-      window.location.href = "/1J";
     }
   });
 }
