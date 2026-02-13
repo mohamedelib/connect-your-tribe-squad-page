@@ -13,6 +13,14 @@ if (filter) {
     if (this.value === "birthdate") {
       window.location.href = "/birthdate";
     }
+
+    if (this.value === "1I") {
+      window.location.href = "/1I";
+    }
+
+    if (this.value === "1J") {
+      window.location.href = "/1J";
+    }
   });
 }
 

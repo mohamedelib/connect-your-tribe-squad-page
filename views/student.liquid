@@ -1,6 +1,6 @@
 {% render 'partials/head.liquid', title: person.name %}
 <div class="page">
-  <p><a href="/" class="back">&lt; Terug</a></p>
+  <p><a href="/" class="back" style="--fav-color: {{ person.fav_color }}">&lt; Terug</a></p>
 
   <div class="Card" style="--fav-color: {{ person.fav_color }}">
     <img
