@@ -1,5 +1,18 @@
 {% render 'partials/head.liquid', title: 'Squad page' %}
 
+<h1>Berichten</h1>
+
+
+<form action="/berichten" method="POST">
+  
+  <label>
+    Message
+    <textarea name="message"></textarea>
+  </label>
+  <button type="submit">Laat je reactie achter</button>
+</form>
+
+
 <header>
   <img src="/images/fdnd.png" alt="fdnd" width="75" height="75">
 </header>

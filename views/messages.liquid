@@ -1,0 +1,70 @@
+<h1>Berichten</h1>
+
+<ol>
+  {% for message in messages %}
+    <p>"{{ message.from }}" : "{{ message.text }}"</p>
+  {% endfor %}
+</ol>
+
+<h1>Berichten</h1>
+
+<form action="/berichten" method="POST">
+  <label>
+    Message
+    <textarea placeholder="Miauw" name="message"></textarea>
+  </label>
+
+  <label>
+    Afzender
+    <textarea placeholder="piet.." name="afzender"></textarea>
+  </label>
+  <button type="submit">Laat je reactie achter</button>
+</form>
+</body>
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  align-items: center;
+    margin: 0 auto;
+  background: linear-gradient(180deg, #f8fafc, #e5e7eb);
+  min-height: 100vh;
+  }
+  label {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 10px;
+  }
+
+  textarea {
+    border-radius: 12px;
+    height: 40px;
+    border: 2px solid orangered;
+    background: black;
+    color: white;
+  }
+
+  textarea::placeholder {
+    color: white;
+  }
+
+  button[type='submit'] {
+    border: 2px solid black;
+    color: white;
+    background: orangered;
+    border-radius: 18px;
+    width: 200px;
+    height: 30px;
+
+  }
+
+  ol{
+  outline: 3px solid orangered;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+</style>
